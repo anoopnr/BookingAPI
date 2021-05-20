@@ -5,5 +5,5 @@ Clone the package\
 Open the TourBooking directory in cmd\
 Install the dependencies using npm install\
 Run the application using npm start\
-Test the application by typing http://localhost:3000/api/
+Test the application by typing http://localhost:3000/api in browser
 
