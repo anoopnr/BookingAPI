@@ -65,7 +65,25 @@ const createUser=async (req,res)=>{
     }
 }
 
+const getUser=async(req,res)=>{
+    let userData=await user.findById(req.params.id);
+    if(userData){
+        return res.status(200).json({
+            data:userData
+        })
+    }
+    return res.status(404).json({
+        message:"no user found"
+    })
+}
+
+const updateUser=async(req,res)=>{
+
+}
+
 module.exports={
     getUsers:getUsers,
-    createUser:createUser
+    createUser:createUser,
+    getUser:getUser,
+    updateUser:updateUser
 }

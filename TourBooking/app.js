@@ -2,8 +2,9 @@ const express = require('express');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const mongoose=require('mongoose');
-const uri = "mongodb+srv://xxxxxxxxx?retryWrites=true&w=majority";
-const connector = mongoose.connect(uri,{useNewUrlParser: true, useUnifiedTopology: true});
+const uri = "mongodb+srv://a4anoop:myATLAS%40dmin@cluster0.5jmk7.mongodb.net/nr_tour_db?retryWrites=true&w=majority";
+//const uri = "mongodb+srv://xxxxxxxxx?retryWrites=true&w=majority";
+//const connector = mongoose.connect(uri,{useNewUrlParser: true, useUnifiedTopology: true});
 const routes=require('./routes');
 const app = express();
 
